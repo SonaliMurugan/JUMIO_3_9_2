@@ -5,9 +5,9 @@
         <clobbers target="Jumio" />
     </js-module>
     <platform name="ios">
-	<hook type="before_build" src="hooks/before_build/mergepodfile.js" />
+	<hook type="before_build" src="hook/before_build/mergepodfile.js" />
 	    
-	<hook src="hooks/addLocalizationFiles.js" type="after_prepare" />
+	<hook src="hook/addLocalizationFiles.js" type="after_prepare" />
 	     
         <config-file target="config.xml" parent="/*">
             <feature name="JumioMobileSDK">
