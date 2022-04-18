@@ -1,3 +1,9 @@
+// any of the necessary subpods, for example:
+pod 'JumioMobileSDK/NetverifyBase', '~>3.9.1' # For Fastfill, ID Verification basic functionality
+
+// mandatory for Identity Verification
+pod 'JumioMobileSDK/NetverifyFace+iProov', '~>3.9.1' # For Fastfill, ID Verification functionality with Identity Verification, Authentication
+
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     if ['iProov', 'Socket.IO-Client-Swift', 'Starscream'].include? target.name
