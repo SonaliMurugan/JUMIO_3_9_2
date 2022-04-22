@@ -1,3 +1,4 @@
+pod 'Jumio/xxxLiveness'
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     if ['iProov', 'Socket.IO-Client-Swift', 'Starscream'].include? target.name
